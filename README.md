@@ -21,7 +21,7 @@ Add the following settings to your settings file:
 ```
 
 ## Usage
-If you need to access the user's OpenStax account data, you can use the `get_user_data` function from `openstax_accounts.utils`. This function will return a dictionary with the user's data.
+If you need to access the current user's OpenStax account UUID, you can use the `get_logged_in_user_uuid` function from `openstax_accounts.functions`. This function will return a dictionary with the user's data.
 
 ```python
 from django.shortcuts import render
