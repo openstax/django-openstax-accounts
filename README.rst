@@ -1,6 +1,6 @@
-============
+========================
 django-openstax-accounts
-============
+========================
 
 ``django-openstax-accounts`` is a Django app to read data
 from the logged-in user's OpenStax account using the SSO cookie.
