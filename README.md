@@ -5,7 +5,7 @@
 ## Quick start
 
 Add "openstax_accounts" to your INSTALLED_APPS setting like this:
-```
+```python
     INSTALLED_APPS = [
         ...,
         "openstax_accounts",
@@ -13,11 +13,16 @@ Add "openstax_accounts" to your INSTALLED_APPS setting like this:
 ```
 
 Add the following settings to your settings file:
-```
+```python
     # OpenStax Accounts settings
     SSO_COOKIE_NAME = "<oxa_env>"
     SSO_SIGNATURE_PUBLIC_KEY = "<public_key_for_accounts>"
     SSO_ENCRYPTION_PRIVATE_KEY = "<private_key_for_accounts>"
+```
+
+Include the polls URLconf in your project urls.py like this::
+```python
+    path("polls/", include("django_polls.urls")),
 ```
 
 ## Usage
