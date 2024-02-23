@@ -4,14 +4,6 @@
 
 ## Quick start
 
-Add "openstax_accounts" to your INSTALLED_APPS setting like this:
-```python
-    INSTALLED_APPS = [
-        ...,
-        "openstax_accounts",
-    ]
-```
-
 Add the following settings to your settings file:
 ```python
     # OpenStax Accounts settings
