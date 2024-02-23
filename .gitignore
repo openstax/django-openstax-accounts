@@ -1,0 +1,13 @@
+*.pyc
+.venv*
+.vscode
+.mypy_cache
+.coverage
+htmlcov
+/coverage.xml
+
+dist
+*egg-info/*
+
+.DS_Store
+.idea
