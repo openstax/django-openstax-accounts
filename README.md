@@ -20,11 +20,6 @@ Add the following settings to your settings file:
     SSO_ENCRYPTION_PRIVATE_KEY = "<private_key_for_accounts>"
 ```
 
-Include the polls URLconf in your project urls.py like this::
-```python
-    path("polls/", include("django_polls.urls")),
-```
-
 ## Usage
 If you need to access the current user's OpenStax account UUID, you can use the `get_logged_in_user_uuid` function from `openstax_accounts.functions`. This function will return a dictionary with the user's data.
 
