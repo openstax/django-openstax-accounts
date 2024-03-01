@@ -108,7 +108,8 @@ def retrieve_user_data(url=None):
                     'faculty_status': data['items'][0]['faculty_status'],
                     'applications': data['items'][0]['applications'],
                     'fullname': fullname,
-                    'uuid': data['items'][0]['uuid']
+                    'uuid': data['items'][0]['uuid'],
+                    'is_administrator': data['items'][0]['is_administrator'],
                 }
             except IndexError:
                 return False
