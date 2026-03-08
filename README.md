@@ -24,4 +24,15 @@ def my_view(request):
     return render(request, "my_template.html", {"user_uuid": user_uuid})
 ```
 
+## Releasing
 
+The GitHub Actions workflow automatically publishes to PyPI when a tag is pushed.
+
+1. Bump the version in `setup.cfg`
+2. Commit and push the change
+3. Create and push a tag:
+   ```sh
+   git tag v1.0.1
+   git push origin v1.0.1
+   ```
+4. The workflow will build and publish the new version to PyPI automatically
