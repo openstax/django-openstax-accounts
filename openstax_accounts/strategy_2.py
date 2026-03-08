@@ -43,5 +43,5 @@ class Payload:
     def __init__(self, payload_dict):
         self.payload_dict = payload_dict
         self.user_uuid = payload_dict['sub']['uuid']
-        self.user_id = payload_dict['sub']['id']
-        self.name = payload_dict['sub']['name']
+        self.user_id = payload_dict['sub'].get('id')
+        self.name = payload_dict['sub'].get('name')
