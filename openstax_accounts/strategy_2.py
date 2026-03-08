@@ -27,7 +27,8 @@ class Strategy2:
                 decrypted_payload,
                 self.signature_public_key,
                 audience="OpenStax",
-                algorithms=[self.signature_algorithm]
+                algorithms=[self.signature_algorithm],
+                options={"verify_sub": False}
             )
 
             return Payload(decoded_payload)
