@@ -102,15 +102,9 @@ def retrieve_user_data(url=None):
                 fullname = None
 
             try:
-                user_data = {
-                    'email': email,
-                    'self_reported_role': data['items'][0]['self_reported_role'],
-                    'faculty_status': data['items'][0]['faculty_status'],
-                    'applications': data['items'][0]['applications'],
-                    'fullname': fullname,
-                    'uuid': data['items'][0]['uuid'],
-                    'is_administrator': data['items'][0]['is_administrator'],
-                }
+                user_data = dict(data['items'][0])
+                user_data['email'] = email
+                user_data['fullname'] = fullname
             except IndexError:
                 return False
 
